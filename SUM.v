@@ -1,8 +1,8 @@
 module SUM( 
     input data,
-    output dataOut
+    output DataOut
 );
 
-    dataOut= 4 + data;
+    assign DataOut= 4 + data;
 	
 endmodule
