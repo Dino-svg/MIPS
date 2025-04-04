@@ -1,8 +1,9 @@
 module SUM( 
-    input data,
-    output DataOut
+    input [31:0]addrs,
+    output reg [31:0]addrsOut
 );
 
-    assign DataOut= 4 + data;
-	
+always @(*) begin
+    assign addrsOut= 4 + addrs;
+end
 endmodule
