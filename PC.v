@@ -1,10 +1,15 @@
+`timescale 1ns/1ns
+
 module PC(
 	input [31:0]dataIn,
 	input clk,
-	output [31:0]dataOut
+	output reg[31:0]dataOut
 );
 
+initial begin 
+dataOut=-4; 
+end
 always @(posedge clk) begin
-	dataOut <= dataIn
+	dataOut = dataIn;
 end
 endmodule
